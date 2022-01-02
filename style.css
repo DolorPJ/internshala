@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    /* background-color: grey; */
+}
+.container{
+    background: #ffffff;
+    box-sizing: border-box;
+    height: 629px;
+    width: 416px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    left: 38%;
+    top: 60px;
+    border-radius: 10px;
+    border: 1px solid #E4E4E4;
+}
+.wel-text{
+    background: linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%);
+    height: 278px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'DM Sans', sans-serif;
+    padding: 20px 60px;
+    color: #ffffff;
+    animation-name: welcome-text;
+    animation-duration: 2s;
+}
+
+.wel-text .bot1{
+    background: linear-gradient(180deg, #FF7600 0%, #FF5C00 100%);
+    position: absolute;
+    height: 67px;
+    width: 67px;
+    border-radius: 50%;
+    top:167px;
+    left: 34px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15) ;
+}
+.wel-text .bot1 img{
+    padding: 15px;
+    animation: bot1 6s;
+}
+
+
+.wel-text .text{
+    animation-name: text;
+    animation-duration: 4s;
+}
+/* animation */
+
+@keyframes welcome-text {
+    0% {opacity: 0;}
+    60% {opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+@keyframes text{
+    0% {opacity: 0;}
+    70% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes question{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;} 
+}
+
+.wel-text h3{
+    padding: 10px 0;
+    font-size: 22px;
+}
+.wel-text p{
+    font-size: 18px;
+}
+.wel-text h3 span{
+    padding-left: 20px;
+}
+.in-question{
+    background: #ffffff;
+    height: 400px;
+    width: 390px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 13px;
+    top: 199px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif ;
+    padding: 20px;
+    padding-top: 60px;
+    border: 1px solid #E4E4E4;
+    animation-name: question;
+    animation-duration: 8s;
+}
+.in-question ul li{
+    width: 339px;
+    height: 50px;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+    margin: 10px 0 ;
+    list-style-position: inside;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 12px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.in-question ul li:hover{
+    cursor: pointer;
+}
+
+.in-question ul li::before{
+    content: "";
+    background-image: url('./Group\ 8.svg');
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right:5px;
+}
+
+.btn-wrap {
+    text-align: center;
+    margin-top: 10px;
+    animation: button 20s;
+}
+
+
+.in-question a.custom-button{
+    background-color: transparent;
+    border:1px solid #D1D1D1;
+    border-radius: 100px;
+    padding: 1em;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.in-question a.custom-button::before{
+    content: "";
+    background-image: url(./chat\ 1.svg);
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+
+}
+
+.bot{
+    background: linear-gradient(180deg, #FF7600 0%, #FF5C00 100%);
+    position: absolute;
+    height: 67px;
+    width: 67px;
+    border-radius: 50%;
+    top:-33.5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15) ;
+}
+.bot img{
+    padding: 15px;
+}
+
+.question1{
+    animation-name: li-1;
+    animation-duration: 8s;
+}
+.question2{
+    animation-name: li-2;
+    animation-duration: 11s;
+}
+.question3{
+    animation-name: li-3;
+    animation-duration: 14s;
+}
+.question4{
+    animation-name: li-4;
+    animation-duration: 17s;
+}
+@keyframes li-1{
+    0%{opacity: 0;}
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes li-2{
+    0%{opacity: 0;}
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes li-3{
+    0%{opacity: 0;}
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes li-4{
+    0%{opacity: 0;}
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes button{
+    0% {opacity: 0;}
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
